@@ -9,23 +9,23 @@ Repositório da disciplina **Web Programming for Front End**, contendo materiais
 🚀 **Aula 3 - Manipulação de arrays e objetos**  
 <sup>Aula 4 - Promises, async/await e programação assíncrona</sup>  
 
-**2️⃣ Manipulação do DOM e Eventos**  
+<sup>**2️⃣ Manipulação do DOM e Eventos**</sup>   
 
-<sup>Aula 5 </sup>- Seleção e modificação de elementos HTML  
-<sup>Aula 6 </sup>- Manipulação de classes e atributos  
-<sup>Aula 7 </sup>- Eventos do usuário e interações dinâmicas  
-<sup>Aula 8 </sup>- Validação de formulários com JavaScript  
+<sup>Aula 5 - Seleção e modificação de elementos HTML</sup>  
+<sup>Aula 6 - Manipulação de classes e atributos</sup>  
+<sup>Aula 7 - Eventos do usuário e interações dinâmicas</sup>  
+<sup>Aula 8 - Validação de formulários com JavaScript</sup>  
 
-**3️⃣ Frameworks Front End (React)**  
+<sup>**3️⃣ Frameworks Front End (React)**</sup>   
 
-<sup>Aula 9 </sup> - Conceitos de componentes e props  
-<sup>Aula 10</sup> - Estado e ciclo de vida de componentes  
-<sup>Aula 11</sup> - Rotas e navegação em SPAs  
-<sup>Aula 12</sup> - Integração com APIs RESTful  
+<sup>Aula 9  - Conceitos de componentes e props</sup>  
+<sup>Aula 10 - Estado e ciclo de vida de componentes</sup>  
+<sup>Aula 11 - Rotas e navegação em SPAs</sup>  
+<sup>Aula 12 - Integração com APIs RESTful</sup>  
 
-**4️⃣ Boas Práticas de Desenvolvimento**
+<sup>**4️⃣ Boas Práticas de Desenvolvimento**</sup> 
 
-<sup>Aula 13</sup> - Organização de código e componentização  
-<sup>Aula 14</sup> - Ferramentas de build (Vite, Webpack, etc.)  
-<sup>Aula 15</sup> - Acessibilidade e responsividade  
-<sup>Aula 16</sup> - Publicação de aplicações (Vercel, Netlify)
+<sup>Aula 13 - Organização de código e componentização</sup>  
+<sup>Aula 14 - Ferramentas de build (Vite, Webpack, etc.)</sup>  
+<sup>Aula 15 - Acessibilidade e responsividade</sup>  
+<sup>Aula 16 - Publicação de aplicações (Vercel, Netlify)</sup>
