@@ -7,6 +7,7 @@ Repositório da disciplina **Web Programming for Front End**, contendo materiais
 ✅ Aula 1 - Tipos de dados, operadores e estruturas de controle  
 🚀 **Aula 2 - Funções, arrow functions e callbacks**  
 🚀 **Aula 3 - Manipulação de arrays e objetos**  
+
 <sup>Aula 4 - Promises, async/await e programação assíncrona</sup>  
 
 <sup>**2️⃣ Manipulação do DOM e Eventos**</sup>   
