@@ -5,7 +5,6 @@ Repositório da disciplina **Web Programming for Front End**, contendo materiais
 ### 1️⃣ Fundamentos de JavaScript Moderno (ES6+)
 
 Aula 1 - Tipos de dados, operadores e estruturas de controle  
-<sub>
 Aula 2 - Funções, arrow functions e callbacks  
 Aula 3 - Manipulação de arrays e objetos  
 Aula 4 - Promises, async/await e programação assíncrona  
@@ -30,4 +29,3 @@ Aula 13 - Organização de código e componentização
 Aula 14 - Ferramentas de build (Vite, Webpack, etc.)  
 Aula 15 - Acessibilidade e responsividade  
 Aula 16 - Publicação de aplicações (Vercel, Netlify)
-</sub>
