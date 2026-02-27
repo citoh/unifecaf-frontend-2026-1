@@ -22,16 +22,16 @@ const alunos = {
 
     totalAlunosAprovados: 0,
     porcentagemAprovacao: 0,
-
     totalAlunosReprovados: 0,
     porcentagemReprovacao: 0,
+    mediaDeNotas: 0,
+    medianaDeNotas: 0,
 
     idadeMedia: 0,
 
-    nomeAlunoMaisNovo: '',
+    nomeAlunoMaisNovo: '-',
     idadeMaisNovo: 0,
-
-    nomeAlunoMaisVelho: '',
+    nomeAlunoMaisVelho: '-',
     idadeMaisVelho: 0,
 
     histogramPorcentagemNotasPorPontos: (ALUNOS_DATA.reduce((pontos, aluno) => {
@@ -47,10 +47,13 @@ const alunos = {
             cursos.push({
                 nome: aluno.curso,
                 total: ALUNOS_DATA.filter(a => a.curso === nomeCurso).length,
+                distribuicaoDeAlunos: 0,
                 totalAlunosAprovados: 0,
                 porcentagemAprovacao: 0,
                 totalAlunosReprovados: 0,
                 porcentagemReprovacao: 0,
+                mediaDeNotas: 0,
+                medianaDeNotas: 0,
                 idadeMedia: 0,
                 nomeAlunoMaisNovo: '',
                 idadeMaisNovo: 0,
@@ -63,8 +66,8 @@ const alunos = {
         return cursos;
     }, []).sort((a, b) => a.nome.localeCompare(b.nome))),
 
-    nomeCursoMaiorPorcentagemAprovacao: '',
-    nomeCursoMenorPorcentagemAprovacao: '',
+    nomeCursoMaiorPorcentagemAprovacao: '-',
+    nomeCursoMenorPorcentagemAprovacao: '-',
 
     totalAlunosPorFaixaDeIdade: (min, max) => { return 0 },
 
@@ -91,10 +94,12 @@ console.log(`
     > Porcentagem de reprovação: ${alunos.totalAlunosReprovados} (${alunos.porcentagemReprovacao}%)
     > Curso com maior procentagem de aprovações: ${alunos.nomeCursoMaiorPorcentagemAprovacao}
     > Curso com menor procentagem de aprovações: ${alunos.nomeCursoMenorPorcentagemAprovacao}
+    > Média das notas: ${alunos.mediaDeNotas}
+    > Mediana das notas: ${alunos.medianaDeNotas}
 
     > Idade media dos alunos: ${alunos.idadeMedia}
-    > Aluno mais novo: ${alunos.nomeAlunoMaisNovo} (${alunos.idadeMaisNovo} anos
-    > Aluno mais velho: ${alunos.nomeAlunoMaisVelho} (${alunos.idadeMaisVelho} anos
+    > Aluno mais novo: ${alunos.nomeAlunoMaisNovo} (${alunos.idadeMaisNovo}) anos
+    > Aluno mais velho: ${alunos.nomeAlunoMaisVelho} (${alunos.idadeMaisVelho}) anos
     > Quantidade com menos de 17 - 20 anos: ${alunos.totalAlunosPorFaixaDeIdade(17, 20)}
     > Quantidade com menos de 21 - 25 anos: ${alunos.totalAlunosPorFaixaDeIdade(21, 25)}
     > Quantidade com menos de 26 - 30 anos: ${alunos.totalAlunosPorFaixaDeIdade(26, 30)}
@@ -108,8 +113,11 @@ for (const curso of alunos.cursos) {
     console.log(`
     ${curso.nome.toUpperCase()}
     > Quantidade total de alunos: ${curso.total}
+    > Porcentagem total de alunos fazendo o curso: ${curso.distribuicaoDeAlunos}%
     > Total de alunos aprovados: ${curso.totalAlunosAprovados} (${curso.porcentagemAprovacao}%)
     > Porcentagem de reprovação: ${curso.totalAlunosReprovados} (${curso.porcentagemReprovacao}%)
+    > Média das notas: ${curso.mediaDeNotas}
+    > Mediana das notas: ${curso.medianaDeNotas}
     > Idade media dos alunos: ${curso.idadeMedia}
     > Aluno mais novo: ${curso.nomeAlunoMaisNovo} (${curso.idadeMaisNovo} anos
     > Aluno mais velho: ${curso.nomeAlunoMaisVelho} (${curso.idadeMaisVelho} anos
