@@ -1,0 +1,12 @@
+{
+  "name": "unifecaf-frontend-2026-1",
+  "version": "1.0.0",
+  "description": "Repositório da disciplina **Web Programming for Front End**, contendo materiais, exemplos práticos, projetos e exercícios desenvolvidos ao longo do curso.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
