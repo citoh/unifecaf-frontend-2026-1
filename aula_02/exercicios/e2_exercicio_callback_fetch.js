@@ -15,7 +15,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     })
     .then(users => {
         const search = 'Ervin'
-        // Seu código aqui
+        const resultado = users.filter(user => user.name.includes(search));
+        console.log(resultado);
     })
     .catch(error => console.log(error));
-

@@ -15,3 +15,12 @@ const alunos = [
     {nome: 'Aluno8', aprovado: true},
     {nome: 'Aluno9', aprovado: false}
 ];
+
+let i = 0;
+
+while (i < alunos.length) {
+    if (alunos[i].aprovado) {
+        console.log(alunos[i].nome);
+    }
+    i++;
+}

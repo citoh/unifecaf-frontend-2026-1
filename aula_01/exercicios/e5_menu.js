@@ -16,8 +16,9 @@ let tentativas = 0;
 
 do {
     numero = Math.floor(Math.random() * 10) + 1;
-    // Seu código aqui
-} while (/* Escreva aqui a condição de parada*/);
+    tentativas++;
+    console.log(numero);
+} while (!(numero % 2 === 0 && numero % 3 === 0));
 
 console.log("Número encontrado:", numero);
 console.log("Número de tentativas:", tentativas);

@@ -4,3 +4,9 @@
 	e retorne a mensagem: "Olá, NOME!".
 	Depois exiba o resultado no console.
 */
+
+function saudacao(nome) {
+    return `Olá, ${nome}!`;
+}
+
+console.log(saudacao("João"));

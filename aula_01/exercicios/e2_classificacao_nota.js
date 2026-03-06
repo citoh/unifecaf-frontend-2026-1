@@ -7,3 +7,13 @@
     - Recuperação (nota >= 5 e < 7)
     - Aprovado (nota >= 7)
 */
+
+let nota = 6;
+
+if (nota < 5) {
+    console.log("Reprovado");
+} else if (nota >= 5 && nota < 7) {
+    console.log("Recuperação");
+} else {
+    console.log("Aprovado");
+}

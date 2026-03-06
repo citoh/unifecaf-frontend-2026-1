@@ -6,3 +6,11 @@
     - é maior de idade (>= 18)
     Exiba a mensagem correspondente no console.
 */
+
+let idade = 20;
+
+if (idade < 18) {
+    console.log("Menor de idade");
+} else {
+    console.log("Maior de idade");
+}
