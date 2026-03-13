@@ -9,7 +9,6 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   />
-
   <link rel="stylesheet" href="./frontend.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -34,7 +33,12 @@
 
             <div>
               <label for="curso">Curso</label>
-              <input type="text" id="curso" required />
+              <select id="curso" required>
+                <option value="">Selecione um curso</option>
+                <option value="Computação">Computação</option>
+                <option value="Direito">Direito</option>
+                <option value="Medicina">Medicina</option>
+              </select>
             </div>
 
             <div>
@@ -89,7 +93,7 @@
 
         <div class="stats-grid" id="estatisticas-totais"></div>
 
-        <div class="chart-box">
+        <div class="chart-box" id="chart-box-geral">
           <h3>Histograma de notas</h3>
           <canvas id="grafico-geral"></canvas>
         </div>

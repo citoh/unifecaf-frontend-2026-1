@@ -47,7 +47,7 @@ label {
   font-size: 14px;
 }
 
-input, button {
+input, select, button {
   width: 100%;
   box-sizing: border-box;
   padding: 8px;
@@ -169,13 +169,35 @@ th {
   margin-top: 10px;
 }
 
-.aluno-nome-hover {
+.aluno-nome-click {
   cursor: pointer;
+  color: #0b57d0;
+}
+
+.aluno-nome-click:hover {
+  text-decoration: underline;
 }
 
 .highlight-aluno {
   color: green !important;
   font-weight: bold !important;
+  border-color: green !important;
+}
+
+.stat-card.highlight-aluno{
+    background: #EEFFEE;
+    border-color: green !important;
+}
+
+.aluno-selecionado {
+  color: green !important;
+  font-weight: bold !important;
+}
+
+.course-header.highlight-aluno {
+  color: green !important;
+  font-weight: bold !important;
+  border-color: green !important;
 }
 
 @media (max-width: 980px) {
