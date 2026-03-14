@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Alunos</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="./frontend.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Painel de Alunos</h1>
+
+  <div id="message" class="message"></div>
+
+  <div class="layout">
+    <section class="panel">
+      <h2>Cadastro de alunos</h2>
+
+      <div class="block">
+        <form id="aluno-form">
+          <input type="hidden" id="aluno-id" />
+
+          <div class="form-grid">
+            <div class="full">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" required />
+            </div>
+
+            <div>
+              <label for="curso">Curso</label>
+              <select id="curso" required>
+                <option value="">Selecione um curso</option>
+                <option value="Computação">Computação</option>
+                <option value="Direito">Direito</option>
+                <option value="Medicina">Medicina</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="dataNascimento">Data de nascimento</label>
+              <input type="date" id="dataNascimento" required />
+            </div>
+
+            <div>
+              <label for="mediaFinal">Média final</label>
+              <input type="number" id="mediaFinal" min="0" max="10" step="0.1" required />
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <button type="submit" id="btn-salvar">
+              <i class="fa-solid fa-floppy-disk"></i> Salvar
+            </button>
+
+            <button type="button" id="btn-cancelar">
+              <i class="fa-solid fa-ban"></i> Cancelar edição
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="block">
+        <h3>Alunos</h3>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Curso</th>
+                <th>Data Nasc.</th>
+                <th>Idade</th>
+                <th>Média</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="alunos-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Estatísticas</h2>
+
+      <div class="block">
+        <h3>Estatísticas totais</h3>
+
+        <div class="stats-grid" id="estatisticas-totais"></div>
+
+        <div class="chart-box" id="chart-box-geral">
+          <h3>Histograma de notas</h3>
+          <canvas id="grafico-geral"></canvas>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3>Estatísticas por Curso</h3>
+        <div id="cursos-container"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./frontend.js"></script>
+</body>
+</html>

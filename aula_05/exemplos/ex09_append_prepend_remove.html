@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulando Lista</title>
+</head>
+<body>
+
+    <h1>Lista de Nomes</h1>
+
+    <ul id="lista">
+        <li>Ana</li>
+        <li>Bruno</li>
+        <li>Carla</li>
+    </ul>
+
+    <input id="nome" placeholder="Digite um nome">
+
+    <br><br>
+
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="remove">Remove</button>
+
+    <script>
+
+        const lista = document.getElementById("lista")
+        const nome = document.getElementById("nome")
+
+        const append = document.getElementById("append")
+        const prepend = document.getElementById("prepend")
+        const remove = document.getElementById("remove")
+
+        // Adiciona no final
+        append.addEventListener("click", () => {
+            const li = document.createElement("li")
+            li.innerText = nome.value
+            lista.append(li)
+            nome.value = ""
+        })
+
+        // Adiciona no início
+        prepend.addEventListener("click", () => {
+            const li = document.createElement("li")
+            li.innerText = nome.value
+            lista.prepend(li)
+            nome.value = ""
+        })
+
+        // Remove último elemento
+        remove.addEventListener("click", () => {
+            if(lista.lastElementChild){
+                lista.lastElementChild.remove()
+            }
+        })
+
+    </script>
+
+</body>
+</html>
