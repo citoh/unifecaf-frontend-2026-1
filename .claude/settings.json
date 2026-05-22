@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/franciscofeitosa/Documents/UniFECAF/2026-01/Web Programming for Front End/unifecaf-frontend-2026-1/projeto_autenticacao/backend\")",
+      "Bash(mkdir -p \"/Users/franciscofeitosa/Documents/UniFECAF/2026-01/Web Programming for Front End/unifecaf-frontend-2026-1/projeto_autenticacao/frontend/src/pages\")",
+      "Bash(npm show *)",
+      "Bash(timeout 5 node server.js)"
+    ]
+  }
+}
